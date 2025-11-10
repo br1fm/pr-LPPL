@@ -1,0 +1,16 @@
+# Este es un ejemplo #
+
+ent x;
+ent y;
+bool b;
+
+x = 13;
+y = 2;
+
+si (x == y)[
+   b = x * y;
+] sino [
+   b = x == y + 2;
+]
+
+
