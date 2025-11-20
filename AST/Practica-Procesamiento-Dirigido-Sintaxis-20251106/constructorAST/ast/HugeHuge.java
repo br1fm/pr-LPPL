@@ -2,7 +2,7 @@ package ast;
 
 public class HugeHuge extends E {
   private String v;
-  public Num(String v) {
+  public HugeHuge(String v) {
    this.v = v;   
   }
   public String num() {return v;}

@@ -1,5 +1,5 @@
 package ast;
 
 public enum BinOps {
-    MAS, IGUAL, MAYOR
+    MAS, IGUAL, MAYOR, MULTIPLICA
 }

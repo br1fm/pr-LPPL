@@ -19,7 +19,8 @@ public class EBin extends E {
         switch(op) {
           case MAS:  opstr = "MAS"; break;
           case IGUAL: opstr = "IGUAL"; break;
-          case MAYOR:  opstr = "POR"; break;
+          case MAYOR:  opstr = "MAYOR"; break; //antes ponía "POR"
+          case MULTIPLICA: opstr = "MULTIPLICA"; break;
           default:
           break;
        }
