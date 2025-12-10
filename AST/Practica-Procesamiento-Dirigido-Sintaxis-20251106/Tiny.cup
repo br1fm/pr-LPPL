@@ -25,13 +25,11 @@ init with {:
 :};
 
 
-terminal IF, ELSE, TIPO_ENT, TRUE, FALSE, TIPO_BOOL TIPO_HUGE, TIPO_HUGEHUGE;
-terminal MAS, IGUAL, IGUALIGUAL, MAYOR, PAP, PCIERRE, CAP;
-terminal CCIERRE, PUNTOCOMA, MULTIPLICA;
-terminal TokenValue IDEN, ENT, HUGE, HUGEHUGE;
+terminal IF, ELSE, TIPO_ENT, TRUE, FALSE, TIPO_BOOL, TIPO_HUGE, TIPO_HUGEHUGE,
+MAS, IGUAL, IGUALIGUAL, MAYOR, PAP, PCIERRE, CAP, CCIERRE, PUNTOCOMA, MULTIPLICA;
 
-
-non terminal  LinkedList<Instruccion> P, LInst, ElseCase;
+terminal TokenValue IDEN, ENT;
+non terminal LinkedList<Instruccion> P, LInst, ElseCase;
 non terminal Instruccion Inst, Cond, Asig, Decl;
 non terminal E E0, E1, E2, E3, E4;
 
@@ -95,11 +93,7 @@ E4      ::= E3: exp
             {: RESULT = exp; :};
 
 E3      ::= ENT: value
-            {: RESULT = new Num(value.lexema); :};
-E3      ::= HUGEHUGE: value
-            {: RESULT = new HugeHuge(value.lexema); :};
-E3      ::= HUGE: value
-            {: RESULT = new Huge(value.lexema); :}; 
+            {: RESULT = new Num(value.lexema); :}; 
 E3      ::= TRUE
             {: RESULT = new BoolValue("true"); :};
 E3      ::= FALSE 

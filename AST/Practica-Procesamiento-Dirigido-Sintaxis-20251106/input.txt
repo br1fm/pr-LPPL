@@ -3,9 +3,12 @@
 ent x;
 ent y;
 bool b;
+hugeHuge h;
 
+h = 738217498342883974347837438742;
 x = 13;
 y = 2;
+hdksajdhaksjdh kjsahdkjad jdhs
 
 si (a == y)[
    b = falso;
