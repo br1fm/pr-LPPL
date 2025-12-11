@@ -71,5 +71,8 @@ public class ALexOperations {
   public UnidadLexica unidadMultiplica() {
      return new UnidadLexica(alex.fila(),alex.columna(),ClaseLexica.MULTIPLICA);
   }
+  public UnidadLexica unidadPorfavor() {
+     return new UnidadLexica(alex.fila(),alex.columna(),ClaseLexica.PORFAVOR);
+  }
 
 }

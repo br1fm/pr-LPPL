@@ -53,7 +53,8 @@ int = ent
 bool = bool
 longInt = huge
 longLongInt = hugeHuge
-puntocoma = \;
+puntocoma = \
+porfavor = porfavor;
 
 %%
 {separador}               {}
@@ -71,9 +72,10 @@ puntocoma = \;
 {operadorSuma}            {return ops.unidadSuma();}
 {operadorIgual}           {return ops.unidadIgual();}
 {operadorIgualIgual}      {return ops.unidadIgualIgual();}
+{porfavor}                {return ops.unidadPorfavor();}
 {operadorMayor}           {return ops.unidadMayor();}
 {parentesisApertura}      {return ops.unidadPAp();}
-{parentesisCierre}        {return ops.unidadPCierre();} 
+{parentesisCierre}        {return ops.unidadPCierre();}
 {corcheteApertura}        {return ops.unidadCAp();}
 {corcheteCierre}          {return ops.unidadCCierre();} 
 {puntocoma}               {return ops.unidadPuntoComa();} 
